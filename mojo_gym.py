@@ -31,8 +31,17 @@ LESSONS = [
             'functions1.mojo',
             'functions2.mojo',
             'functions3.mojo',
+            'functions4.mojo',
+            'functions5.mojo',
         ]
-    }
+    },
+    {
+        'folder': 'mutability_and_ownership',
+        'files': [
+            'mutability1.mojo',
+            'mutability2.mojo',
+        ]
+    },
 ]
 
 
@@ -71,10 +80,12 @@ def main():
                     layout['upper'].update(f'Current exercise [red]{filepath}[/]. Proceed to file and follow instructions.')
                     if filepath.exists():
                         is_ok, output = compile_and_run(filepath)
-                        if is_ok and is_done(filepath):
-                            file_index += 1
+                        if is_ok:
+                            layout['lower'].update(f'[green]Pass[/]. Remove "I AM NOT DONE" to continue to the next exercise. Output:\n\n{output}')
+                            if is_done(filepath):
+                                file_index += 1
                         else:
-                            layout['lower'].update(output)
+                            layout['lower'].update(f'[red]Failed[/]. Output:\n\n{output}')
                     time.sleep(1)
 
             layout['upper'].update('[red]Congratulations![/] You have finished all exercises. Press Ctrl+C to exit.')
