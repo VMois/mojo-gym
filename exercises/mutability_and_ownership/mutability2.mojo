@@ -5,7 +5,7 @@
 from testing import assert_true
 
 
-fn add_inout(x: Int, y: Int) -> Int:
+fn add_mutate(x: Int, y: Int) -> Int:
     x += 1
     y += 1
     return x + y
@@ -28,7 +28,7 @@ fn main():
     _ = assert_true(x == 1, 'x should not be changed')
     _ = assert_true(y == 2, 'y should not be changed')
 
-    let b = add_inout(x, y)
+    let b = add_mutate(x, y)
     print('b = ', b)
     print('x = ', x)
     print('y = ', y)
