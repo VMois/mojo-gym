@@ -40,6 +40,9 @@ LESSONS = [
         'files': [
             'mutability1.mojo',
             'mutability2.mojo',
+            'ownership1.mojo',
+            'ownership2.mojo',
+            'ownership3.mojo',
         ]
     },
 ]
