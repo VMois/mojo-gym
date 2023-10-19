@@ -1,7 +1,7 @@
 # TASK
 # Run this file and see what happens
 
-#  AM NOT DONE
+# I AM NOT DONE
 
 
 # Both of these functions are equivalent
