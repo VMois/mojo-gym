@@ -11,6 +11,8 @@ fn pow(base: Int, exp: Int) -> Int:
     return base ** exp
 
 # do not change below this line
-fn main():
+fn main() raises:
     let c = pow(3)
-    _ = assert_true(c == 9, 'z should equal 9')
+    
+    if c != 9:
+        raise Error('z should equal 9')
