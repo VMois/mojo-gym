@@ -11,6 +11,8 @@ fn add(x: Int = 2, y: Int) -> Int:
     return x + y
 
 # do not change below this line
-fn main():
+fn main() raises:
     let c = add()
-    _ = assert_true(c == 5, 'c should equal 5')
+    
+    if c != 5:
+        raise Error('c should equal 5')
