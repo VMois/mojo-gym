@@ -45,6 +45,13 @@ LESSONS = [
             'ownership3.mojo',
         ]
     },
+    {
+        'folder': 'structs',
+        'files': [
+            'structs1.mojo',
+            'structs2.mojo',
+        ]
+    }
 ]
 
 
