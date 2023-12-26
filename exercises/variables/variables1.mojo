@@ -1,5 +1,5 @@
 # TASK
-# Run this file. It should print the values of x, y, and z.
+# The program should print the values of x, y, and z.
 
 # I AM NOT DONE
 

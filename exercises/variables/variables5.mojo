@@ -9,4 +9,5 @@ def main():
     var z: Int = 6.5
 
     # don't change below this line
-    debug_assert(x + y + z == 15.5, 'x + y + z should be 15.5')
+    if x + y + z != 15.5:
+        raise Error('x + y + z should be 15')
