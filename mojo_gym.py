@@ -36,7 +36,7 @@ LESSONS = [
         ]
     },
     {
-        'folder': 'mutability_and_ownership',
+        'folder': 'value_ownership',
         'files': [
             'mutability1.mojo',
             'mutability2.mojo',
