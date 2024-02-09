@@ -10,7 +10,7 @@ def main():
     # TODO: create a ColorClassic struct
     # let color = ...
 
-    if color.red != 0 and color.green != 255 and color.blue != 0:
+    if color.red != 0 or color.green != 255 or color.blue != 0:
         raise Error('Color must be 0, 255, 0')
     
     print('Nicely done!')
